@@ -1,0 +1,102 @@
+nav {
+  background-color: white;
+  color: black;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.label-check {
+  display: none;
+}
+
+.hamburger-label {
+  width: 70px;
+  height: 58px;
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger-label div {
+  width: 70px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+}
+
+.line1, .line2, .line3 {
+  transition: all 0.3s ease;
+}
+
+.line2 {
+  margin: 18px 0 0 0;
+}
+
+.line3 {
+  margin: 36px 0 0 0;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+  transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+  border-radius: 50px 50px 50px 0;
+}
+
+#label-check:checked + .hamburger-label .line3 {
+  transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+  border-radius: 0 50px 50px 50px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+  width: 45px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.container {
+  display: none;
+}
+
+/* Mobile menu: Show list when checkbox is checked */
+#label-check:checked ~ ul {
+  display: flex; /* Show the menu items */
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    width: 100%; /* Ensure the menu takes full width */
+  }
+
+  nav li {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
