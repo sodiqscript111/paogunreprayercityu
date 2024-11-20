@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import "./aboutUs.css";
 
 const AboutUs = () => {
@@ -11,9 +13,11 @@ const AboutUs = () => {
           Rooted in faith, our church is committed to fostering a deep connection with God while creating a strong, supportive community for believers. With our general headquarters in Ibadan, Nigeria, 
           we have continued to expand across the world, touching lives and spreading the message of love, faith, and grace.
         </p>
-        <button className="read-more" onClick={() => window.location.href = "/about"}>
-          Read More
-        </button>
+        <Link to="/about">
+  <button className="read-more">
+    Read More
+  </button>
+</Link>
       </div>
     </div>
   );
