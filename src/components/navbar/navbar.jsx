@@ -1,26 +1,32 @@
-
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:109049380.
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:2997473313.
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import menu from '../../assets/bars-solid.svg'; // Import your menu icon
+import close from '../../assets/xmark-solid.svg'; // Import your close icon
 
 const Navbar = () => {
-  return (
-    <nav>
-      <div className="logo">
-        <img src="https://www.cacfsif.com/images/LongLogo1.png" alt="Logo" /> {/* Paste your image link here */}
-      </div>
-      <div class="container">
-        <input class="label-check" id="label-check" type="checkbox" />
-        <label for="label-check" class="hamburger-label">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </label>
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <ul>
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <img
+          src="https://www.pngkey.com/png/detail/123-1230334_the-christ-apostolic-church-christ-apostolic-church-logo.png"
+          alt="Logo"
+        />
+      </div>
+      <div className="menu-icon" onClick={handleMenuToggle}>
+        <img
+          src={isOpen ? close : menu}
+          alt={isOpen ? 'Close Menu' : 'Open Menu'}
+          style={{ width: '30px', height: '30px' }}
+        />
+      </div>
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -36,7 +42,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
