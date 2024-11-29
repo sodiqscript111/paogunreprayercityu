@@ -5,6 +5,7 @@ import Welcome from '../welcome/welcome';
 import Founder from '../founder/founder';
 import Contact from '../contact/contact';
 import AboutUs from '../about/about';
+import FollowUsOnFacebook from '../followup/follow';
 const Home = () => {
   return (
     <>

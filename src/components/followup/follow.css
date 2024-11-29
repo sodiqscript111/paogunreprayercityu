@@ -1,0 +1,45 @@
+.facebook-container {
+      background: linear-gradient(90deg, #4267B2, #29487d);
+        color: #fff;
+          border-radius: 10px;
+            padding: 20px;
+              display: flex;
+                justify-content: center;
+                  align-items: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                      max-width: 500px;
+                        margin: 20px auto;
+                        }
+
+                        .facebook-content {
+                          display: flex;
+                            align-items: center;
+                            }
+
+                            .facebook-logo {
+                              width: 50px;
+                                height: 50px;
+                                  margin-right: 15px;
+                                  }
+
+                                  .facebook-text-container {
+                                    text-align: left;
+                                    }
+
+                                    .facebook-text {
+                                      font-size: 18px;
+                                        font-weight: bold;
+                                          margin-bottom: 5px;
+                                          }
+
+                                          .facebook-link {
+                                            color: #fff;
+                                              text-decoration: underline;
+                                                font-size: 16px;
+                                                  transition: color 0.3s;
+                                                  }
+
+                                                  .facebook-link:hover {
+                                                    color: #d9e3f0;
+                                                    }
+}
