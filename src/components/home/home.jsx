@@ -14,6 +14,7 @@ const Home = () => {
     <Founder/>
     <Contact/>
     <AboutUs></AboutUs>
+    <FollowUsOnFacebook/> 
     </>
   );
 };
