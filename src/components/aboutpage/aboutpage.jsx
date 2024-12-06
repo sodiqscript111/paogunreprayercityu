@@ -31,12 +31,12 @@ const AboutPage = () => {
       </div>
 
       <div className="about-section">
-        <h3>Christ Apostolic Church Worldwide (CACWW)</h3>
+        <h3>CAC NIGERIA AND OVERSEAS</h3>
         <p>
-          Christ Apostolic Church World Wide (CACWW) is a great mission that God has planted and continues to expand all over the world. The general headquarters is at Ibadan, the largest city in Nigeria. 
+        CAC NIGERIA AND OVERSEAS is a great mission that God has planted and continues to expand all over the world. The general headquarters is at Ibadan, the largest city in Nigeria. 
         </p>
         <p>
-          The mission is blessed with branches in Africa, Europe, and America. The head of CACWW is the President. For full details of CACWW, you may visit: <a href="http://www.cacworldwide.net" target="_blank" rel="noopener noreferrer">www.cacworldwide.net</a>
+          The mission is blessed with branches in Africa, Europe, and America. The head of CAC NIGERIA AND OVERSEAS is the President. For full details of CAC NIGERIA AND OVERSEAS, you may visit: <a href="http://www.cacworldwide.net" target="_blank" rel="noopener noreferrer">www.cacworldwide.net</a>
         </p>
       </div>
 
