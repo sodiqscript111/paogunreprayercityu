@@ -28,7 +28,7 @@
   
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 8fr;
     gap: 20px;
   }
   
@@ -58,7 +58,10 @@
   .about-section a:hover {
     text-decoration: underline;
   }
-  
+  ul{
+    display: grid;
+    grid-template-columns : 1fr,8fr;
+    }
   /* Responsive Design */
   @media (max-width: 768px) {
     /* Stack the grid items on smaller screens */

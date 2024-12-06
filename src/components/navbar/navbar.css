@@ -12,6 +12,8 @@ nav {
   padding: 10px 30px;
   height: 80px;
   background-color: #fff;
+  text-decoration: none;
+  color: black;
 }
 
 .logo img {
@@ -30,6 +32,17 @@ ul {
   gap: 18px;
   font-family: 'Segoe UI', sans-serif;
   font-weight: 430;
+
+}
+ul li {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links {

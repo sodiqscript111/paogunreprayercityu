@@ -27,7 +27,9 @@ const Navbar = () => {
         />
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li>
+        <li style={{
+  textDecoration: 'none', // corrected the property name (camelCase)
+  color: 'black'}}>
           <Link to="/">Home</Link>
         </li>
         <li>

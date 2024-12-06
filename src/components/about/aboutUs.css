@@ -1,57 +1,90 @@
 /* General Styling */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f5f5f5;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+}
+
+/* About Us Section */
+.about-us {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure no overflow during animations */
+}
+
+.about-us-content {
+  text-align: center;
+}
+
+/* Title Animation */
+.about-us-content h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensure animation fits the container */
+}
+
+/* Text Animation */
+.about-us-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Individual Word Styling for Animation */
+.word {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+
+.word.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Read More Button */
+.read-more {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: #007991;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+}
+
+.read-more:hover {
+  background: #005f73;
+}
+
+.read-more:active {
+  transform: scale(0.98);
+}
+
+/* Optional Button Entrance Animation */
+.read-more {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInButton 0.8s ease-out forwards;
+  animation-delay: 1s; /* Delay button entrance after text animation */
+}
+
+/* Button Animation Keyframes */
+@keyframes fadeInButton {
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  /* About Us Section */
-  .about-us {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-us-content {
-    text-align: center;
-  }
-  
-  .about-us-content h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  
-  .about-us-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  /* Read More Button */
-  .read-more {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background: #007991;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    position: relative;
-    left: 0;
-    margin-top: 20px;
-  }
-  
-  .read-more:hover {
-    background: #005f73;
-  }
-  
-  .read-more:active {
-    transform: scale(0.98);
-  }
-  
+}
